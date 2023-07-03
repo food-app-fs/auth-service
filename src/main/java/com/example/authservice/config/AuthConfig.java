@@ -37,7 +37,8 @@ public class AuthConfig {
                 .requestMatchers(
                         "/auth/register",
                         "/auth/token",
-                        "/auth/validate").permitAll()
+                        "/auth/validate",
+                        "/auth/logout").permitAll()
                 .and()
                 .build();
     }
